@@ -33,11 +33,6 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   
-  dynamic hotelNames = await readFromFB();
-    for (int i = 0; i < hotelNames.length; i++) {
-      print(hotelNames[i]);
-    }
-
   runApp(const MyWidget());
 }
 
